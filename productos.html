@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cafeteria "Sueños de Karou"</title>
+    <link rel="shortcut icon" href="iconos/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <script type="text/javaScript" src="script.js"></script>
+</head>
+<body>    
+    <div id="cabecera"><img src="imagenes/logotipo.jpg" id="logo"/></div>
+    <nav class="menu-main">
+        <a href="index_2.html">Inicio</a>            
+        <a href="mision.html">Misión</a>
+        <a href="vision.html">Visión</a>
+        <a href="historia.html">Historia</a>
+        <a href="organigrama.html">Organigrama</a>
+        <a href="productos.html">Productos</a>
+    </nav>       
+    <div id="tablon">        
+        <div id="tab_1">
+            <audio src="audio/dnce_cbo.mp3" controls="controls" type="audio/mpeg" preload="preload">
+            </audio>
+        </div>
+        <div id="tab_2">
+            <h2>Comentarios:</h2>
+            <h3>JOSÉ P.:</h3><p>Me encantan las salteñas y ahora para navidad un pan dulce dietético y unas empanaditas de queso se las recomiendo</p>
+            <h3>DENISE A.:</h3><p>Un lujo. Gracias por realzar las fiestas que tenemos con su distinguido sabor</p>
+            <h3>MARIA C.:</h3><p>Tienen las mejores tortas de La Paz ¡Me encanta TODO!</p>
+        </div>
+        <div id="tab_3"></div>
+    </div>    
+    <div id="contenido">
+        <div>
+            <h2 style="margin-left: 10px;">Productos:</h2>
+            <div id="myBtnContainer" style="margin-left: 20px;">
+                <button class="btn active" onclick="filterSelection('all')">Todos los productos</button>
+                <button class="btn" onclick="filterSelection('bebidas')">Bebidas</button>
+                <button class="btn" onclick="filterSelection('pastel')">Tortas</button>
+                <button class="btn" onclick="filterSelection('repo_dulce')">Repostería Dulce</button>
+                <button class="btn" onclick="filterSelection('repo_salada')">Repostería Salada</button>
+                <button class="btn" onclick="filterSelection('tartas')">Pies o Tartas</button>
+                <button class="btn" onclick="filterSelection('cafeteria')">Cafeteria</button>
+            </div>
+        </div id="container">
+        <div>
+            <div class="mostrador_izq filterDiv bebidas"><img src="imagenes/batido_de_piña.jpg" style="height: 80%; width:250px;"/><h3>Batido de Piña</h3></div>
+            <div class="mostrador_der filterDiv bebidas"><img src="imagenes/batido_de_platano_y_nueces.jpg" style="height: 80%; width:250px;"/><h3>Batido de Platano y Nueces</h3></div>
+            <div class="mostrador_izq filterDiv bebidas"><img src="imagenes/batidos_desintoxicantes.jpg" style="height: 80%; width:250px;"/><h3>Desintoxicantes</h3></div>
+            <div class="mostrador_der filterDiv bebidas"><img src="imagenes/Frescos_de_Costa_Rica.jpg" style="height: 80%; width:250px;"/><h3>Frescos de Costa Rica</h3></div>
+            <div class="mostrador_izq filterDiv bebidas"><img src="imagenes/chocolate_1.jpg" style="height: 80%; width:250px;"/><h3>Chocolate</h3></div>
+            <div class="mostrador_der filterDiv bebidas"><img src="imagenes/soda_mini.jpg" style="height: 80%; width:250px;"/><h3>Refresco pequeño</h3></div>
+            <div class="mostrador_izq filterDiv bebidas"><img src="imagenes/sodas.jpg" style="height: 80%; width:250px;"/><h3>Resfresco en Lata</h3></div>
+            <div class="mostrador_der filterDiv bebidas"><img src="imagenes/sodas_1.jpg" style="height: 80%; width:250px;"/><h3>Refresco grande</h3></div>
+            <div class="mostrador_der filterDiv bebidas"><img src="imagenes/jugos_1.png" style="height: 80%; width:250px;"/><h3>Jugos Genéricos</h3></div>
+            <div class="mostrador_izq filterDiv bebidas"><img src="imagenes/jugo_papaya_platano.jpg" style="height: 80%; width:250px;"/><h3>Jugo de Papaya y Platano</h3></div>
+            <div class="mostrador_der filterDiv bebidas"><img src="imagenes/jugo_platano.jpeg" style="height: 80%; width:250px;"/><h3>Jugo de Platano</h3></div>
+            <div class="mostrador_izq filterDiv pastel"><img src="imagenes/pastel_de_chocolate.jpg" style="height: 80%; width:250px;"/><h3>Pastel de Chocolate</h3></div>
+            <div class="mostrador_der filterDiv pastel"><img src="imagenes/pastel_selvanegra.png" style="height: 80%; width:250px;"/><h3>Pastel Selva Negra</h3></div>
+            <div class="mostrador_izq filterDiv pastel"><img src="imagenes/pastel-sara.jpg" style="height: 80%; width:250px;"/><h3>Pastel Sara</h3></div>
+            <div class="mostrador_der filterDiv pastel"><img src="imagenes/torta_cumple.jpg" style="height: 80%; width:250px;"/><h3>Pastel de Cumpleaños</h3></div>
+            <div class="mostrador_izq filterDiv pastel"><img src="imagenes/tortas_personalizadas.jpg" style="height: 80%; width:250px;"/><h3>Pateles Personalizados</h3></div>
+            <div class="mostrador_der filterDiv pastel"><img src="imagenes/torta_especial.jpg" style="height: 80%; width:250px;"/><h3>Pastel Especial</h3></div>
+            <div class="mostrador_izq filterDiv pastel"><img src="imagenes/torta_fresa.jpg" style="height: 80%; width:250px;"/><h3>Pastel de Fresa</h3></div>
+            <div class="mostrador_izq filterDiv pastel"><img src="imagenes/pastel_2.jpg" style="height: 80%; width:250px;"/><h3>Pastel de Durazno</h3></div>
+            <div class="mostrador_der filterDiv pastel"><img src="imagenes/pastel_4.jpg" style="height: 80%; width:250px;"/><h3>Pastel Corazón</h3></div>
+            <div class="mostrador_izq filterDiv pastel"><img src="imagenes/pastel_chocostar.jpg" style="height: 80%; width:250px;"/><h3>Pastel ChocoStar</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/alfajores.jpg" style="height: 80%; width:250px;"/><h3>Alfajores</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/alfajores_maizena.jpg" style="height: 80%; width:250px;"/><h3>Alfajores de Maizcena</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/bombitas.jpg" style="height: 80%; width:250px;"/><h3>Bombitas</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/cannoli.jpg" style="height: 80%; width:250px;"/><h3>Cannoli</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/cupcake_3.jpg" style="height: 80%; width:250px;"/><h3>Cupcake's</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/donas.jpg" style="height: 80%; width:250px;"/><h3>Donas</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/donas_2.jpg" style="height: 80%; width:250px;"/><h3>Donas recubiertas</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/donas_personalizadas.jpg" style="height: 80%; width:250px;"/><h3>Donas Personalizadas</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/donas-halloween.jpg" style="height: 80%; width:250px;"/><h3>Donas de Halloween</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/galletas.jpg" style="height: 80%; width:250px;"/><h3>Galletas Clásicas</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/galletas_3.jpg" style="height: 80%; width:250px;"/><h3>Galletas de Navidad</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/galletas_de_navidad.jpg" style="height: 80%; width:250px;"/><h3>Galletas de Navidad</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/huminta_2.jpg" style="height: 80%; width:250px;"/><h3>Huminta Dulce</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/tiramisu.jpg" style="height: 80%; width:250px;"/><h3>Tiramisu</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/tiramisu_colacao.jpg" style="height: 80%; width:250px;"/><h3>Tiramisu Colacao</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/masitas_1.jpg" style="height: 80%; width:250px;"/><h3>Masitas</h3></div>
+            <div class="mostrador_izq filterDiv repo_dulce"><img src="imagenes/masitas_2.jpg" style="height: 80%; width:250px;"/><h3>Masitas</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/masitas_3.jpg" style="height: 80%; width:250px;"/><h3>Masitas</h3></div>
+            <div class="mostrador_der filterDiv repo_dulce"><img src="imagenes/masitas-secas.jpg" style="height: 80%; width:250px;"/><h3>Masitas Secas</h3></div>
+            <div class="mostrador_izq filterDiv repo_salada"><img src="imagenes/empanadas_2.jpg" style="height: 80%; width:250px;"/><h3>Empanadas</h3></div>
+            <div class="mostrador_der filterDiv repo_salada"><img src="imagenes/empanadas_de_queso.jpg" style="height: 80%; width:250px;"/><h3>Empanadas de Queso</h3></div>
+            <div class="mostrador_izq filterDiv repo_salada"><img src="imagenes/humintas_al_horno.jpg" style="height: 80%; width:250px;"/><h3>Humintas al Horno</h3></div>
+            <div class="mostrador_der filterDiv repo_salada"><img src="imagenes/mini_sandwiches.jpg" style="height: 80%; width:250px;"/><h3>Mini-Sandwiches</h3></div>
+            <div class="mostrador_izq filterDiv repo_salada"><img src="imagenes/salteñas.jpg" style="height: 80%; width:250px;"/><h3>Salteñas de Pollo</h3></div>
+            <div class="mostrador_der filterDiv repo_salada"><img src="imagenes/salteña_2.jpg" style="height: 80%; width:250px;"/><h3>Salteñas de Carne</h3></div>
+            <div class="mostrador_der filterDiv repo_salada"><img src="imagenes/tucumanas.jpeg" style="height: 80%; width:250px;"/><h3>Tucumanas</h3></div>
+            <div class="mostrador_izq filterDiv tartas"><img src="imagenes/porcion_pastel.jpg" style="height: 80%; width:250px;"/><h3>Tarta especial</h3></div>
+            <div class="mostrador_der filterDiv tartas"><img src="imagenes/porcion_pastel_2.jpg" style="height: 80%; width:250px;"/><h3>Tarta de Durazno</h3></div>
+            <div class="mostrador_izq filterDiv tartas"><img src="imagenes/porcion_pastel_3.jpg" style="height: 80%; width:250px;"/><h3>Tarta de Frutilla</h3></div>
+            <div class="mostrador_der filterDiv tartas"><img src="imagenes/queque_clasico.jpg" style="height: 80%; width:250px;"/><h3>Queque Clásico</h3></div>
+            <div class="mostrador_izq filterDiv tartas"><img src="imagenes/pie.jpg" style="height: 80%; width:250px;"/><h3>Pie</h3></div>
+            <div class="mostrador_der filterDiv tartas"><img src="imagenes/pie_de_limon.jpg" style="height: 80%; width:250px;"/><h3>Pie de Limón</h3></div>
+            <div class="mostrador_izq filterDiv tartas"><img src="imagenes/pie_de_manzana.jpg" style="height: 80%; width:250px;"/><h3>Pie de Manzana</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/cafe.jpg" style="height: 80%; width:250px;"/><h3>Café Común</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/cafe_americano.jpeg" style="height: 80%; width:250px;"/><h3>Café Americano</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/cafe_descremado.jpeg" style="height: 80%; width:250px;"/><h3>Café Descremado</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/cafe_expresso.jpg" style="height: 80%; width:250px;"/><h3>Café Expresso</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/cafe_leche.jpg" style="height: 80%; width:250px;"/><h3>Café con Leche</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/chocolatecaliente.jpg" style="height: 80%; width:250px;"/><h3>Chocolate Caliente</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/ensalada_1.jpg" style="height: 80%; width:250px;"/><h3>Ensalada</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/ensalada_de_fruta.jpg" style="height: 80%; width:250px;"/><h3>Ensalada de Fruta</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/img_03.jpg" style="height: 80%; width:250px;"/><h3>Té</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/mate_cafe.jpg" style="height: 80%; width:250px;"/><h3>Mate y Café</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/mint-hot-chocolate.jpg" style="height: 80%; width:250px;"/><h3>Mini-Hot Chocolate</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/omelette.jpg" style="height: 80%; width:250px;"/><h3>Omelette</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/omelette_2.jpg" style="height: 80%; width:250px;"/><h3>Omelette Vegetariano</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/pizza_clasica.jpg" style="height: 80%; width:250px;"/><h3>Pizza Clásica</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/pizza_pollo_bacon.jpg" style="height: 80%; width:250px;"/><h3>Pizza de Pollo con Bacón</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/pizza-con-pepperoni.jpg" style="height: 80%; width:250px;"/><h3>Pizza con Pepperoni</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/pizza-napolitana.jpg" style="height: 80%; width:250px;"/><h3>Pizza Napolitana</h3></div>
+            <div class="mostrador_izq filterDiv cafeteria"><img src="imagenes/sandwich_sub.jpg" style="height: 80%; width:250px;"/><h3>Sandwich Submarino</h3></div>
+            <div class="mostrador_der filterDiv cafeteria"><img src="imagenes/sandwich.jpg" style="height: 80%; width:250px;"/><h3>Sandwich</h3></div>
+        </div>
+    </div>    
+    <div id="pie">
+        <h3 style="margin-left: 20px;">Contactos</h3>
+        <p style="margin-left: 20px;">Dirección: Avenida Villazón N° 1275, frente Monoblock UMSA</p>
+        <a href="#"><img src="iconos/018-reddit.png" class="iconos_sitio"/></a>
+        <a href="#"><img src="iconos/000-4chan.png" class="iconos_sitio"/></a>
+        <a href="#"><img src="iconos/009-tumblr.png" class="iconos_sitio"/></a>   
+        <a href="#""><img src="iconos/001-youtube.png" class="iconos_sitio"/></a>
+        <a href="#"><img src="iconos/008-twitter.png" class="iconos_sitio"/></a>
+        <a href="#"><img src="iconos/029-instagram.png" class="iconos_sitio"/></a>
+        <a href="#"><img src="iconos/036-facebook.png" class="iconos_sitio"/></a>
+    </div>
+</body>
+</html>
